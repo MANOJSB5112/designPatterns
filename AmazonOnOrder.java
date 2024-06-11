@@ -5,14 +5,14 @@ import java.util.ArrayList;
 public class AmazonOnOrder {
 public static AmazonOnOrder instance=null;
 
-    public static ArrayList<AmazonOnOrderNotify> list=new ArrayList<>();
+    public ArrayList<AmazonOnOrderNotify> list=new ArrayList<>();
 
-    public static void register(AmazonOnOrderNotify az)
+    public void register(AmazonOnOrderNotify az)
     {
         list.add(az);
     }
 
-    public static void deregister(AmazonOnOrderNotify az)
+    public void deregister(AmazonOnOrderNotify az)
     {
         list.remove(az);
     }
@@ -33,9 +33,7 @@ public static AmazonOnOrder instance=null;
 
     public void onOrderPlaced()
     {
-        OnOrderNotifyCustomer onc=new OnOrderNotifyCustomer();
-        OnOrderNotifyLogistics onl=new OnOrderNotifyLogistics();
-        OnOrderNotifyWarehouse onw=new OnOrderNotifyWarehouse();
+       
         for(AmazonOnOrderNotify az: list)
         {
             az.notifyOrder();

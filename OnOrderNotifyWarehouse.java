@@ -6,8 +6,8 @@ public class OnOrderNotifyWarehouse implements AmazonOnOrderNotify{
 
     public OnOrderNotifyWarehouse ()
     {
-        AmazonOnOrder az=AmazonOnOrder.getInstance()
-        AmazonOnOrder.register(az);
+        AmazonOnOrder az=AmazonOnOrder.getInstance();
+        az.register(this);
 
     }
     public void notifyOrder()
