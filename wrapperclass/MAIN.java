@@ -6,5 +6,7 @@ public class MAIN {
         Integer num=10;
         int i=num;
         System.out.println(i);
+
+
     }
 }

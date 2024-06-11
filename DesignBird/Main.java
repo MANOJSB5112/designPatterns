@@ -2,6 +2,7 @@ package DesignBird;
 
 public class Main {
     public static void main(String[] args) {
+        int i=0;
           Flying f=new Flying();
           f.makeSound();
           f.fly();

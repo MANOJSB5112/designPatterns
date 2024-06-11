@@ -1,6 +1,7 @@
 public class main {
     public static void main(String[] args)
     {
-        C c=new C();
+        A c=new C();
+        c.print();
     }
 }
