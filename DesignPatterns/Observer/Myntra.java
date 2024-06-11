@@ -19,7 +19,6 @@ public class Myntra {
    {
        subscriberList.remove(opi);
    }
-
     public static Myntra getInstance()
     {
         if(instance==null)
