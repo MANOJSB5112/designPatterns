@@ -5,7 +5,7 @@ import java.sql.SQLOutput;
 public class Main {
     public static void main(String[] args) {
         Student st=Student.getBuilder()
-                    .setName("Manoj")
+                .setName("Manoj")
                 .setAge(23)
                 .setPsp(85.0)
                 .setUniversity("Jain")
